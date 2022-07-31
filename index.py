@@ -1,4 +1,4 @@
-import bdfdpy.py as bdfd
+import bdfdpy as bdfd
 from decouple import config
 import discord
 from discord.ext import commands
