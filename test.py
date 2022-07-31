@@ -4,4 +4,4 @@ from decouple import config
 token = config('token')
 
 bdfd.client.run(token)
-bdfd.bot.command($, test)
+bdfd.bot.command("e!test", "success")
