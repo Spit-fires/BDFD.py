@@ -1,7 +1,6 @@
 import math
 import time
 import discord.py
-import discord
 import logging
 from discord.ext import commands
 
