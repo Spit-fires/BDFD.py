@@ -21,9 +21,14 @@ async def on_ready():
     print('Logged in as {0.user}'.format(client))
 
 # ping command
-  @bot.command()
-  async def ping(ctx, *args):
-    await ctx.send(pong!)
+@bot.command()
+async def ping(ctx, *args):
+  await ctx.send(pong!)
+# defining bot
+
+def bot(bot_prefix, bot_description, bot_intents):
+  bot = commands.Bot(command_prefix = bot_prefix, description = bot_description, intents = bot_intents)
+
 # functions
 
 def fetch(pkg):
