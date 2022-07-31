@@ -29,11 +29,11 @@ def fetch(pkg):
 def log(text):
   print(text)
   
-def bot.command(trigger, response):
+def bot%command(trigger, response):
   @bot.command()
   async def trigger(ctx, *args):
     await ctx.send(response)
           
-def bot.token(token):
+def bot%token(token):
   client.run(token)
 
