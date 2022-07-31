@@ -3,7 +3,7 @@ import time
 import discord
 import logging
 from discord.ext import commands
-
+import index as index
 # logging
 
 logger = logging.getLogger('discord')
@@ -24,8 +24,8 @@ async def on_ready():
 intents = discord.Intents.default() 
 intents.members = True
 
-class bot(self, prefix):
-  bot = commands.Bot(command_prefix = self.prefix, description = description, intents = intents)
+bot = commands.Bot(command_prefix = index.prefix, description = index.description, intents = intents)
+
 
 # ping command ()
 
