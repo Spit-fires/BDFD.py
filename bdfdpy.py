@@ -20,15 +20,12 @@ client = discord.Client()
 async def on_ready():
     print('Logged in as {0.user}'.format(client))
 
-# ping command (remove #)
-# @bot.command()
-# async def ping(ctx, *args):
-  # await ctx.send(pong!)
-# defining bot
+# ping command ()
 
-def bot(bot_prefix, bot_description, bot_intents):
-  bot = commands.Bot(command_prefix = bot_prefix, description = bot_description, intents = bot_intents)
-
+@bot.command()
+async def ping(ctx, *args):
+  await ctx.send("pong!")
+  
 # functions
 
 def fetch(pkg):
@@ -45,3 +42,16 @@ def bot_command(trigger, response):
 def bot_run(token):
   client.run(token)
 
+def onlyif(condition, error):
+  if condition == false:
+    return error 
+    
+def client_command(trigger, response):
+  @client.event
+  async def on_message(message):
+      if message.author == client.user:
+          return
+  
+      if message.content.startswith(trigger):
+          await message.channel.send(response)
+          

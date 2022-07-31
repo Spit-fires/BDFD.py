@@ -9,7 +9,7 @@
 
 ## Installation
 ```
-pip install bdfdpy
+pip install bdfdpy && pip install discord
 ```
 
 ## Usage
