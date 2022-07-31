@@ -11,4 +11,10 @@
 ```
 pip install bdfdpy
 ```
+
+## Usage
+```python
+import bdfdpy as bdfd
+```
+
 ## contributing [TBC](TBC)

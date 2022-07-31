@@ -1,4 +1,7 @@
 import bdfdpy as bdfd
+from decouple import config
 
-e = "yes"
-bdfd.log(e)
+token = config('token')
+
+bdfd.client.run(token)
+bdfd.bot.command($, test)
