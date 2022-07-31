@@ -3,5 +3,5 @@ from decouple import config
 
 token = config('token')
 
-bdfd.client.run(token)
-bdfd.bot.command("e!test", "success")
+bdfd.client_run(token)
+bdfd.bot_command("e!test", "success")
