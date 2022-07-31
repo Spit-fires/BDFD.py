@@ -33,6 +33,6 @@ def bot_command(trigger, response):
   async def trigger(ctx, *args):
     await ctx.send(response)
           
-def bot_token(token):
+def bot_run(token):
   client.run(token)
 
