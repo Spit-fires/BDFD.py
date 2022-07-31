@@ -20,6 +20,13 @@ client = discord.Client()
 async def on_ready():
     print('Logged in as {0.user}'.format(client))
 
+
+intents = bdfd.discord.Intents.default() 
+intents.members = True
+
+class bot(self, prefix):
+  bot = commands.Bot(command_prefix = self.prefix, description = description, intents = intents)
+
 # ping command ()
 
 @bot.command()
