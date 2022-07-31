@@ -20,6 +20,10 @@ client = discord.Client()
 async def on_ready():
     print('Logged in as {0.user}'.format(client))
 
+# ping command
+  @bot.command()
+  async def ping(ctx, *args):
+    await ctx.send(pong!)
 # functions
 
 def fetch(pkg):
