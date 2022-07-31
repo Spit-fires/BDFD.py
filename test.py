@@ -1,4 +1,4 @@
-import simplepy as sp
+import bdfdpy as bdfd
 
 e = "yes"
-sp.log(e)
+bdfd.log(e)
