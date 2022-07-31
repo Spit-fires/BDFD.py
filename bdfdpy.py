@@ -3,7 +3,7 @@ import time
 import discord
 import logging
 from discord.ext import commands
-import index as index
+import botinfo as index
 # logging
 
 logger = logging.getLogger('discord')

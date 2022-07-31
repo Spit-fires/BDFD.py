@@ -5,7 +5,7 @@ from discord.ext import commands
 
 description = '''An example bot to show the usage of bdfdpy'''
 token = config('token')
-prefix = "e!"
+
 
 # starting the bot
 bdfd.bot_run(token)
