@@ -21,10 +21,9 @@ async def on_ready():
     print('Logged in as {0.user}'.format(client))
 
 
-intents = discord.Intents.default() 
-intents.members = True
 
-bot = commands.Bot(command_prefix = index.prefix, description = index.description, intents = intents)
+
+bot = commands.Bot(command_prefix = index.prefix, description = index.description, intents = index.intents)
 
 
 # ping command ()
